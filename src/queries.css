@@ -1,0 +1,224 @@
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 62.25em) {
+  .resource-data {
+    grid-template-columns: 100%;
+  }
+
+  .info-container {
+    flex-direction: row;
+    justify-content: start;
+    gap: 2.4rem;
+  }
+
+  .resource-info {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .choose-booking .booking-time,
+  .resource-available .time {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 52.4em) {
+  .resource-booking {
+    padding-inline: 4.8rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.2rem;
+  }
+
+  .resource-booking p {
+    margin-bottom: 1.2rem;
+  }
+
+  .choose-booking .booking-time,
+  .resource-available .time {
+    justify-self: end;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2.4rem;
+    margin-bottom: 5.2rem;
+  }
+
+  .table-row {
+    grid-template-columns: 3fr 3fr 1fr;
+    justify-content: start;
+    align-content: start;
+    row-gap: 2.4rem;
+    margin-bottom: 5.2rem;
+  }
+
+  .table-row .start-time {
+    order: 1;
+  }
+
+  .table-row p {
+    margin-bottom: 2px;
+  }
+
+  .table-row .start-time input {
+    width: 100% !important;
+  }
+
+  .table-row .plus-icon {
+    order: 2;
+  }
+}
+
+@media (max-width: 41em) {
+  body {
+    padding: 4.22rem 2.44rem;
+  }
+
+  .add-resource {
+    gap: 1rem;
+  }
+
+  .resource-actions {
+    gap: 5px;
+  }
+
+  .add-resource > p {
+    font-size: 1.2rem;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .time-options,
+  .choose-booking {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3.33rem;
+    margin-bottom: 4.8rem;
+    row-gap: 1.2rem;
+  }
+
+  .booking-options .booking-time,
+  .time-options .time {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .work-time__header,
+  .work-time__text {
+    text-align: center;
+  }
+
+  .ellipsis {
+    display: block;
+    position: relative;
+  }
+
+  .ellipsis .btn svg {
+    font-size: 2.4rem;
+    color: #fff;
+  }
+
+  .ellipsis .list {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 1.2rem;
+    top: 100%;
+    width: 15rem;
+    border-radius: 6px;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .ellipsis .list .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #aaa;
+    padding: 1.2rem 1.2rem;
+  }
+
+  .ellipsis .list .btn:hover {
+    background-color: #ddd;
+    color: var(--color-blue-1);
+  }
+
+  .ellipsis .list .btn:hover svg {
+    color: var(--color-blue-1);
+  }
+
+  .ellipsis .list .ellipsis__delete-btn {
+    color: var(--color-red-1);
+  }
+
+  .ellipsis .list .ellipsis__delete-btn svg {
+    width: 1.4rem;
+    aspect-ratio: 1;
+    color: var(--color-red-1);
+  }
+
+  .resource-actions > button {
+    display: none !important;
+  }
+
+  .ellipsis .list-ltr {
+    right: 0;
+  }
+
+  .ellipsis .list-rtl {
+    left: 0;
+  }
+
+  .start-time .picker-columns {
+    background-color: #ffffff;
+    min-width: 24.4rem;
+    z-index: 9999;
+    transform: translateX(-10%);
+  }
+
+  .start-time .time-picker {
+    left: 0;
+  }
+
+  .start-time .picker-columns {
+    background-color: #ffffff;
+    min-width: 24.4rem;
+    z-index: 9999;
+    transform: translateX(-10%);
+  }
+
+  .start-time .timer-btns {
+    min-width: 24.4rem;
+    transform: translateX(-10%);
+  }
+
+  .start-time .timer-btns .btn {
+    padding: 5px 5px;
+  }
+}
+
+@media (max-width: 32em) {
+  /* .start-time.start .time-picker {
+    left: 0;
+  } */
+
+  .start-time.ltr .time-picker {
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  .start-time.rtl .time-picker {
+    left: 0;
+    transform: translateX(80%);
+  }
+}
